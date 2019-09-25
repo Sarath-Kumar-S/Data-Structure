@@ -23,9 +23,9 @@ void main()
               }
         }
     }
-    whilw(ll<=ul)
+    while(ll<=ul)
     {   mid=(ll+ul)/2;
-        if(key==a[mid])}
+        if(key==a[mid])
         {   printf("Key found at position %d \n",mid);
             flag=1;  }
         else if(key<a[mid])
