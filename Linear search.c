@@ -14,11 +14,11 @@ void main()
         {    if(key==a[i])
              {      printf("Key found at position %d\n",i);
                     flag=1;
-              }
-         }
-         if(flag==0)
-         {      printf("Key not found \n);     
-         }
-         getch();
+             }
+        }
+        if(flag==0)
+        {      printf("Key not found \n);     
+        }
+        getch();
 }
        
