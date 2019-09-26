@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<conio.h>
 void main()
-{       int a[10],i,key,flag=0;
+{       int a[10],i,n,key,flag=0;
         printf("Enter no. of elements in the array:");
         scanf"%d",&n);
         printf("Enter the elements:");
