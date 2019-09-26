@@ -17,7 +17,7 @@ void main()
              }
         }
         if(flag==0)
-        {      printf("Key not found \n);     
+        {      printf("Key not found \n");     
         }
         getch();
 }
