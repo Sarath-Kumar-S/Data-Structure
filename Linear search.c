@@ -9,7 +9,7 @@ void main()
         {    scanf("%d",&a[i]);
         }
         printf("Enter the key to be searched for:");
-        scanf("%d",&key");
+        scanf("%d",&key);
         for(i=0;i<n;i++)
         {    if(key==a[i])
              {      printf("Key found at position %d\n",i);
