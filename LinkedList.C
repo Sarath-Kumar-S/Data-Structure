@@ -79,7 +79,7 @@ void traverse()
       while(ptr->link != NULL)
       {
           ptr = ptr->link;
-	  printf(" -> %d",ptr->data);
+	  printf("%d",ptr->data);
       }
  }
 }
