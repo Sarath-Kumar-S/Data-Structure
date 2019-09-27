@@ -58,9 +58,9 @@ void main()
               case 0: exit(0);
                       break;
               default:
-		                   	printf("ERROR!! INVALID CHOICE");
-			                  ch = 0;
-			                  break; 
+		        printf("ERROR!! INVALID CHOICE");
+                        ch = 0;
+	                break; 
        }
    }
    getch();
