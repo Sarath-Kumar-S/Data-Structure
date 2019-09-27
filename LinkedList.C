@@ -18,7 +18,7 @@ void deletepos(int);
 void main()
 {  int ch=1,data,key;
    header->data = NULL;
-	 header->link = NULL;
+   header->link = NULL;
 
    while(ch>1)
    {   printf("1. Traverse linked list.\n");
