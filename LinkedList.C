@@ -69,117 +69,118 @@ void main()
 void traverse()
 {
  ptr = header;
-			if(ptr->link==NULL)
+ if(ptr->link==NULL)
+ {
+      printf("\nERROR!! LIST EMPTY");
+ }
+ else
+ {
+      printf("\nHEADER");
+      while(ptr->link != NULL)
       {
-				printf("\nERROR!! LIST EMPTY");
-			}
-			else
-      {
-			printf("\nHEADER");
-				while(ptr->link != NULL)
-        {
-					ptr = ptr->link;
-					printf(" -> %d",ptr->data);
-				}
-			}
+          ptr = ptr->link;
+	  printf(" -> %d",ptr->data);
+      }
+ }
 }
 void insertfront(int x)
 {
       new = (struct node*) malloc(sizeof(struct node));
-	    new->link = header->link;	
+      new->link = header->link;	
       header->link = new;
       new->data = x;
 }
 void insertend(int x)
 {
       new = (struct node*) malloc(sizeof(struct node));
-			ptr = header;
-			while(ptr->link != NULL)
+      ptr = header;
+      while(ptr->link != NULL)
       {
-				ptr=ptr->link;
-			}
-			new->link=NULL;
-			new->data=x;
-			ptr->link=new;
+	  ptr=ptr->link;
+      }
+      new->link=NULL;
+      new->data=x;
+      ptr->link=new;
 }
 void insertpos(int x,int key);
 {
     ptr = header;
-			while(ptr->data!= key && ptr->link!=NULL)
-      {
-				ptr=ptr->link;
-			}
-			if(ptr->data == key)
-      {
-				new = (struct node*) malloc(sizeof(struct node));
-				new->link = ptr->link;
-				ptr->link = new;
-				new->data = x;
-			}
-			else
-      {
-				printf("ERROR!! KEY NOT FOUND");
-			}
+    while(ptr->data!= key && ptr->link!=NULL)
+    {
+        ptr=ptr->link;
+    }
+    if(ptr->data == key)
+    {				
+	new = (struct node*) malloc(sizeof(struct node));
+	new->link = ptr->link;
+	ptr->link = new;
+	new->data = x;
+    }
+    else
+    {
+	printf("ERROR!! KEY NOT FOUND");
+    }
 }
 void deletefront()
 {
     if(header->link == NULL)
     {      
-				printf("ERROR!! LIST EMPTY");
-		}
-		else 
+	printf("ERROR!! LIST EMPTY");
+    }
+    else 
     {
-				ptr=header->link;
-				header->link=ptr->link;
-				free(ptr);
-				printf("\nNODE DELETED");
-		}
+	ptr=header->link;
+	header->link=ptr->link;
+	free(ptr);
+	printf("\nNODE DELETED");
+    }
 }                
 void deleteend()
 {
     if(header->link == NULL)
     {
-				printf("ERROR!! LIST EMPTY");
-		}
-		else
+	printf("ERROR!! LIST EMPTY");
+    }
+    else
     {
-				ptr2 = header;
-				ptr1 = ptr2->link;
-				while(ptr1->link!=NULL)
-        {
-					ptr2 = ptr1;
-					ptr1 = ptr1->link;
-				}
-				ptr2->link = NULL;
-				free(ptr1);
-				printf("\n NODE DELETED");
-	 }
+	ptr2 = header;
+	ptr1 = ptr2->link;
+	while(ptr1->link!=NULL)
+	{
+            ptr2 = ptr1;
+	    ptr1 = ptr1->link;
+	}
+	    ptr2->link = NULL;
+	    free(ptr1);
+	    printf("\n NODE DELETED");
+    }
 }
 void deletepos(int key);
 {
       if(header->link == NULL)
       {
-		  		printf("ERROR!! LIST EMPTY");
-	    }
-			else
+	    printf("ERROR!! LIST EMPTY");
+      }
+      else
       {
-				ptr2 = header;
-				ptr1 = header->link;
-				while(ptr1->data!= key && ptr1->link!= NULL) {
-					ptr2 = ptr1;
-					ptr1 = ptr1->link;
-				}
-				if(ptr1->data == key)
-        {
-					ptr2->link = ptr1->link;
-					free(ptr1);
-					printf("\nNODE DELETED");
-				}
-				else 
-        {
-					printf("ERROR!! KEY NOT FOUND");
-				}
-			}
+	    ptr2 = header;
+	    ptr1 = header->link;
+	    while(ptr1->data!= key && ptr1->link!= NULL)
+	    {
+		  ptr2 = ptr1;
+		  ptr1 = ptr1->link;
+	    }
+	    if(ptr1->data == key)
+            {
+	        ptr2->link = ptr1->link;
+		free(ptr1);
+		printf("\nNODE DELETED");
+	    }
+	    else 
+	    {
+		printf("ERROR!! KEY NOT FOUND");
+	    }
+      }
 }
         
        
