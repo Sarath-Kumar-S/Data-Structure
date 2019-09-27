@@ -20,7 +20,7 @@ void main()
    header->data = NULL;
    header->link = NULL;
 
-   while(ch>1)
+   while(ch=1)
    {   printf("1. Traverse linked list.\n");
        printf("2. Insert an element at the beginning of linked list.\n");
        printf("3. Insert an element at the end of linked list.\n");
