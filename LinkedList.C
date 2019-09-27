@@ -11,7 +11,7 @@ void traverse();
 void insertfront(int);
 void insertend(int);
 void insertpos(int,int);
-void deletefront(int);
+void deletefront();
 void deleteend();
 void deletepos(int);
 
