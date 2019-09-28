@@ -17,6 +17,7 @@ void deletepos(int);
 
 void main()
 {  int ch=1,data,key;
+   clrscr();
    header->data = NULL;
    header->link = NULL;
 
@@ -71,15 +72,15 @@ void traverse()
  ptr = header;
  if(ptr->link==NULL)
  {
-      printf("\nERROR!! LIST EMPTY");
+      printf("\nERROR!! LIST EMPTY\n");
  }
  else
  {
-      printf("\nHEADER");
+      printf("\nHEADER \n");
       while(ptr->link != NULL)
       {
           ptr = ptr->link;
-	  printf("%d",ptr->data);
+	  printf("%d \n",ptr->data);
       }
  }
 }
@@ -118,28 +119,28 @@ void insertpos(int x,int key);
     }
     else
     {
-	printf("ERROR!! KEY NOT FOUND");
+	printf("ERROR!! KEY NOT FOUND \n");
     }
 }
 void deletefront()
 {
     if(header->link == NULL)
     {      
-	printf("ERROR!! LIST EMPTY");
+	printf("ERROR!! LIST EMPTY\n");
     }
     else 
     {
 	ptr=header->link;
 	header->link=ptr->link;
 	free(ptr);
-	printf("\nNODE DELETED");
+	printf("\nNODE DELETED \n");
     }
 }                
 void deleteend()
 {
     if(header->link == NULL)
     {
-	printf("ERROR!! LIST EMPTY");
+	printf("ERROR!! LIST EMPTY \n");
     }
     else
     {
@@ -152,14 +153,14 @@ void deleteend()
 	}
 	    ptr2->link = NULL;
 	    free(ptr1);
-	    printf("\n NODE DELETED");
+	    printf("\n NODE DELETED\n");
     }
 }
 void deletepos(int key);
 {
       if(header->link == NULL)
       {
-	    printf("ERROR!! LIST EMPTY");
+	    printf("ERROR!! LIST EMPTY\n");
       }
       else
       {
@@ -174,11 +175,11 @@ void deletepos(int key);
             {
 	        ptr2->link = ptr1->link;
 		free(ptr1);
-		printf("\nNODE DELETED");
+		printf("\nNODE DELETED\n");
 	    }
 	    else 
 	    {
-		printf("ERROR!! KEY NOT FOUND");
+		printf("ERROR!! KEY NOT FOUND\n");
 	    }
       }
 }
