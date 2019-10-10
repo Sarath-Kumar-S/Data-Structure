@@ -2,7 +2,6 @@
 #include<conio.h>
 void main()
 { int arr[10],i,j,k,n;
-  clrscr();
   printf("Enter array size:");
   scanf("%d",&n);
   printf("Enter elements:");
