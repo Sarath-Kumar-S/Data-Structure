@@ -6,7 +6,7 @@ void main()
         scanf("%d",&n);
         printf("Enter the elements:");
         for(i=0;i<n;i++)
-        {    scanf("%d",&a[i]);
+        {   scanf("%d",&a[i]);
         }
         printf("Enter the key to be searched for:");
         scanf("%d",&key);
