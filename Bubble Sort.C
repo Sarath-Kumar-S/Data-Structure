@@ -22,7 +22,7 @@ void main()
 
 	printf("\nSorted Array:");
 	for(i=0;i<n;i++)
-	{	printf("\n\t    %d",a[i]);
+	{	printf("\n\t  %d",a[i]);
 	}
         getch();
 }
