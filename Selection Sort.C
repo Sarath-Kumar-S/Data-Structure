@@ -8,8 +8,8 @@ void main()
   scanf("%d",&n);
   printf("\nEnter array:\n");
   for(i=0;i<n;i++)
-  { printf("\t");
-    scanf("%d",&a[i]);
+  {   printf("\t");
+      scanf("%d",&a[i]);
   }
   for(i=0;i<n;i++)
   {  for(j=i+1;j<n;j++)
@@ -22,7 +22,7 @@ void main()
   }
   printf("\nSORTED ARRAY:");
   for(i=0;i<n;i++)
-  {  printf("\n%d",a[i]);
+  {   printf("\n%d",a[i]);
   }
   getch();
 
