@@ -29,9 +29,9 @@ void main()
         {   printf("Key found at position %d \n",mid);
             flag=1;  }
         else if(key<a[mid])
-        {   ul=mid-1;  }
+        {   ul=mid-1;   }
         else
-        {  ll=mid-1;   }
+        {   ll=mid-1;   }
     }
     if(flag==0)
     {
