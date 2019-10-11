@@ -168,8 +168,8 @@ void deletepos(int key);
 	    ptr1 = header->link;
 	    while(ptr1->data!= key && ptr1->link!= NULL)
 	    {
-		  ptr2 = ptr1;
-		  ptr1 = ptr1->link;
+		 ptr2 = ptr1;
+		 ptr1 = ptr1->link;
 	    }
 	    if(ptr1->data == key)
             {
